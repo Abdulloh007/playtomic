@@ -1,0 +1,296 @@
+.pl__navbar {
+    height: 180px;
+    background-color: #ccc;
+    padding-top: 20px;
+}
+
+.pl-row {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pl-action img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pl__navbar .pl-row {
+    justify-content: space-between;
+}
+
+.pl-content {
+    margin-top: -20px;
+    padding-top: 20px;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+}
+
+.pl-c__header {
+    width: 100%;
+    font-size: 14px;
+    align-items: center;
+}
+
+.pl-c__header h2 {
+    font-size: 22px;
+    margin: 0;
+    width: calc(100% - 40px);
+}
+
+.pl-c__header p {
+    font-size: 14px;
+    margin: 10px 0;
+    width: calc(100% - 40px);
+    color: #ccc;
+}
+
+.pl-c__header img {
+    width: 30px;
+    height: 30px;
+}
+
+.pl-tabs {
+    width: 100%;
+}
+
+.pl-tabs__nav {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.pl-tn__item {
+    width: 33.33335%;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    padding: 14px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #697997;
+}
+
+.pl-tn__item.active {
+    border-bottom-color: #161f31;
+    color: #161f31;
+}
+
+.pl-tab__heading {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pl-themes {
+    width: 100%;
+}
+
+.pl-theme>svg {
+    margin-right: 10px;
+}
+
+.pl__tab {
+    background-color: #f3f3ff;
+    padding-bottom: 40px;
+}
+
+.pl-avaliable {
+    width: 100%;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+
+.pl-tags {
+    width: 100%;
+}
+
+.pl-tag {
+    padding: 2px 8px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 1px solid #acb0b7;
+    align-items: center;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7f7f7f;
+}
+
+.pl-tag svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    fill: #7f7f7f;
+}
+
+.pl-actions {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pl-action {
+    text-align: center;
+}
+
+.pl-action button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(238 238 238 / 50%);
+}
+
+.pl-action span {
+    display: block;
+    width: 80px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5d5d5d;
+}
+
+.pl-map {
+    width: 100%;
+    height: 300px;
+    background-color: #757575;
+    margin-bottom: 20px;
+}
+
+.pl-timetable {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.pl-tt__item {
+    justify-content: space-between;
+    font-size: 16px;
+    color: #161f31;
+    margin-bottom: 10px;
+}
+
+.pl-tt__key {
+    font-weight: 600;
+}
+
+.pl-sp {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pl-sp .pl-tab__heading {
+    width: 70%;
+}
+
+.pl-show__more {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pl-ranking__list {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.pl-rl__item {
+    width: 60px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.pl-rl__item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eee;
+    border: 1px solid #e1e1e1;
+}
+
+.pl-rl__item h4 {
+    margin: 5px 0;
+}
+
+.pl-rl__item p {
+    margin: 0;
+}
+
+.pl-result__tables {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.pl-result__table {
+    width: 350px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.pl-lp__top,
+.pl-score.pl-rp__top {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.pl-rtp__date {
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+    margin: 0;
+}
+
+.pl-right__part {
+    text-align: right;
+}
+
+.pl-score {
+    position: relative;
+    font-size: 38px;
+    margin: 0;
+    padding-left: 40px;
+    line-height: 2.5;
+    letter-spacing: 10px;
+}
+
+.pl-score.pl-rp__top::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: -40px;
+    top: 30%;
+    background-image: url('http://localhost:3000/img/cup.jpg');
+    background-size: 100% 100%;
+}
+
+.pl-score.pl-rp__bottom {
+    color: #777;
+}
+
+.pl-lna__deskr {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+.pl-link__account {
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
