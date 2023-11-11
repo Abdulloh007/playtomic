@@ -1,6 +1,6 @@
 import '../css/book-hotel.css'
-import { Button, IconButton } from '@mui/material'
-import { ArrowBack, Directions, FavoriteBorder, Link, LocalOffer, LocalParking, Phone, SportsTennis, Upload } from '@mui/icons-material'
+import { Button, Chip, Divider, IconButton, List, ListItem, ListItemText, Stack } from '@mui/material'
+import { Accessible, ArrowBack, Directions, FavoriteBorder, Icecream, Link, LocalMall, LocalOffer, LocalParking, Lock, Phone, Shower, SportsTennis, Upload } from '@mui/icons-material'
 
 function Home() {
     return (
@@ -42,16 +42,13 @@ function Home() {
                                 </div>
                             </div>
                             <p className="pl-avaliable">1 Avaliable counts</p>
-                            <div className="pl-tags pl-dfw">
-                                <div className="pl-tag pl-dfw">
-                                    <LocalOffer />
-                                    <span>Equirmeent rental</span>
-                                </div>
-                                <div className="pl-tag pl-dfw">
-                                    <LocalParking />
-                                    <span>Free parking</span>
-                                </div>
-                            </div>
+                            <Stack direction="row" spacing={1} className='pl-tags'>
+                                <Chip icon={<Accessible />} label="Special access"></Chip>
+                                <Chip icon={<Icecream />} label="Snack bar"></Chip>
+                                <Chip icon={<LocalMall />} label="Store"></Chip>
+                                <Chip icon={<Lock />} label="Locker"></Chip>
+                                <Chip icon={<Shower />} label="Changing rooms"></Chip>
+                            </Stack>
                             <div className="pl-actions pl-dfw">
                                 <div className="pl-action">
                                     <IconButton color='primary' className='pl-dfw'><Directions /></IconButton>
@@ -68,24 +65,21 @@ function Home() {
                             </div>
                             <div className="pl-map"></div>
                             <h4 className="pl-tab__heading">Opening hours</h4>
-                            <div className="pl-timetable">
-                                <div className="pl-tt__item pl-dfw">
-                                    <span className="pl-tt__key">
-                                        Monday-Sunday
-                                    </span>
-                                    <span className="pl-tt__value">
-                                        06:00 - 02:00
-                                    </span>
-                                </div>
-                                <div className="pl-tt__item pl-dfw">
-                                    <span className="pl-tt__key">
-                                        * Holidays
-                                    </span>
-                                    <span className="pl-tt__value">
-                                        06:00 - 02:00
-                                    </span>
-                                </div>
-                            </div>
+                            <List sx={{ width: '100%' }}>
+                                <ListItem disablePadding>
+                                    <ListItemText className='pl-timetable__item pl-dfw'>
+                                        <span>Monday-Sunday</span>
+                                        <span>09:00 - 00:00</span>
+                                    </ListItemText>
+                                </ListItem>
+                                <Divider />
+                                <ListItem disablePadding>
+                                    <ListItemText className='pl-timetable__item pl-dfw'>
+                                        <span>* Holidays:</span>
+                                        <span>09:00 - 22:00</span>
+                                    </ListItemText>
+                                </ListItem>
+                            </List>
                             <div className="pl-sp pl-dfw">
                                 <h4 className="pl-tab__heading">Padel ranking</h4>
                                 <a href="#" className="pl-show__more">See all</a>
